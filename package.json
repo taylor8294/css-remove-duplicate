@@ -7,7 +7,7 @@
     "test": "npm start -- -c test.config.json"
   },
   "author": "Alex Taylor (@taylor8294)",
-  "license": "see README.md",
+  "license": "see LICENSE.txt",
   "dependencies": {
     "css": "^2.2.4",
     "glob": "^7.1.3",
