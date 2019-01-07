@@ -1,0 +1,15 @@
+{
+    "parentFile": "./parent.css",
+    "childFile": "./children/*.css",
+    "outputDir": "./out",
+    "outputFilename": false,
+    "outputFileExt": ".out.css",
+    "combineSelectors": true,
+    "removeComments": false,
+    "commentsSameLine": true,
+    "removeEmptyLines": false,
+    "verbose": false,
+    "silent": false,
+    "logResult": false,
+    "returnString": false
+}

@@ -1,0 +1,38 @@
+/*  Using a url  */
+@page {
+  margin: 1cm;
+}
+
+@page :first {
+  margin: 2cm;
+}
+
+@supports (display: grid) {
+  div {
+    /* grid comment */
+    display: grid;
+  }
+}
+
+h2.ex1 {
+  color: red;
+  /* CHANGED ALL 3 DECLARATIONS */
+  line-height: 65px;
+  font-size: 60px;
+}
+
+h3 {
+  background: #000080;
+  font-weight: 600;
+}
+
+h1,
+h2,
+div.class5,
+blockquote {
+  font-weight: 600;
+}
+
+p.extra-special {
+  color: gold;
+}

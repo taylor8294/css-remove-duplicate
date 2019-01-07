@@ -1,0 +1,24 @@
+{
+  "name": "css-remove-duplicate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "npm start -- -c test.config.json"
+  },
+  "author": "Alex Taylor (@taylor8294)",
+  "license": "MIT",
+  "dependencies": {
+    "css": "^2.2.4",
+    "glob": "^7.1.3",
+    "js-beautify": "^1.8.9"
+  },
+  "description": "Removes all duplicated CSS rules from a child stylesheet, redundent rules that would be inherited from the parent",
+  "keywords": [
+    "clean",
+    "css",
+    "cleaner",
+    "duplicate",
+    "inherit"
+  ]
+}

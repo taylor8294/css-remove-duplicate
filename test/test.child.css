@@ -1,0 +1,119 @@
+@charset "UTF-8";
+@custom-media --narrow-window (max-width: 30em);
+@document url('http://mywebsite.com/about-me.html') {
+    div.breaking {
+        color: Red;
+        font-size: 20px;
+        border: 1px dashed Purple;
+    }
+}
+@host {
+    div.other {
+        padding: 2px 0 0 0;
+        border: 1px solid Cyan;
+    }
+}
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@import url("navigation.css"); /* Using a url */ 
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+@keyframes identifier {
+    0% { top: 0; left: 0; }
+    30% { top: 50px; }
+    68%, 72% { left: 50px; }
+    100% { top: 100px; left: 100%; }
+}
+@-webkit-keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+@media (--narrow-window) {
+    div.breaking {
+        color: Red;
+        font-size: 20px;
+        border: 1px dashed Purple;
+    }
+}
+@media (--narrow-window) and (script) {
+    div.other {
+        padding: 2px 0 0 0;
+        border: 1px solid Cyan;
+    }
+}
+@namespace url(http://www.w3.org/1999/xhtml);
+@page {
+    margin: 1cm;
+}
+@page :first {
+    margin: 2cm;
+}
+@supports (display: grid) {
+    div {
+      /* grid comment */
+      display: grid;
+    }
+}
+body {
+    background: black;
+    color: #80c0c0 } 
+a:link { color: #ff8080 } 
+a:visited { color: #ff0000 } 
+a:active { color: #a05050 } 
+a.case1:link { background: green } 
+p:first-line { margin-left: 25px } 
+div.foo:first-line {
+    font-weight: bold;
+    margin-left: 30px } 
+div:first-letter {
+    font-size: x-large; 
+    color: #ffffff } 
+ul  ul  LI {
+    font-size: x-large; 
+    font-decoration: italic } 
+h2 em { font-weight: 900 } 
+h2.ex1 {
+    color: red;       /* CHANGED ALL 3 DECLARATIONS */
+    line-height: 65px; 
+    font-size: 60px } 
+.funkyclass {
+    font: 36pt/40pt courier;
+    font-variant: small-caps;
+    border: thick dashed blue } 
+#tagid1 {
+    padding: 20px; 
+    border: 20px groove #ffffff } 
+.class1, #tagid2 { font-family: 'comic sans ms', fantasy; color: rgb(100%,100%,0%) } 
+h1, h2, h3, div.class5, blockquote { background: #000080; font-weight: 600 } 
+p.special {
+    font: 12pt/14pt sans-serif;
+    margin: 5px 0px 2px 25px;
+    border: medium dashed #ff0000;
+    background: white url(http://www.foo.com/image.gif) repeat-x fixed top right }
+p.extra-special /* ADDED */ {
+    color: gold }  
+blockquote {
+    margin-left: 2cm; 
+    color: #00ff00 } 
+.part1 {
+    font-size: xx-large; 
+    color: #808000 } 
+h6 {
+    font-size: xx-small ! important;
+    color: red ! important } 

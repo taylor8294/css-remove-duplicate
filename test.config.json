@@ -1,0 +1,8 @@
+{
+    "parentFile": "./test/test.parent.css",
+    "childFile": "./test/test.child.css",
+    "outputDir": "./test/",
+    "verbose": false,
+    "silent": false,
+    "logResult": false
+}
