@@ -62,9 +62,9 @@ nano config.json
 | `verbose` | Verbose output | `false`
 | `silent` | If `true` no output to the console (overridden by `verbose`) | `false`
 | `logResult` | If true, the resulting child CSS is logged to the console before the script completes | `false`
-| `returnString` | If true, the call the `CSSRemoveDuplicate` function returns the resulting CSS as a string rather than writing to an output file | `false`
+| `returnString` | If true, the call to the `CSSRemoveDuplicate` function returns the resulting CSS as a string rather than writing it to an output file | `false`
 
-Once the config is all setup you should just be able to run `npm start` to get your new reduce child CSS file.
+Once the config is all setup you should just be able to run `npm start` to get your new child CSS file with not a single redundant style declaration.
 
 You can also run `npm start -- -c /path/to/config.json` to specify the path to the config file on the command line (this is how `npm test` passes the `test.config.json` file).
 
